@@ -60,6 +60,7 @@ a = {(5,7):"tuple test"}
 print(a)
 
 
+
 #딕셔너리 관련함수
 # 1) key 리스트 만들기 - keys
 # dict_keys 객체를 리턴한다.
@@ -67,10 +68,14 @@ print(a)
 a = {'name': 'pey', 'phone': '010-9999-1234', 'birth': '1118'}
 print(a.keys()) #output = dict_keys(['name', 'phone', 'birth'])
 
+
+
 # value 리스트 만들기 -values
 print(a.values())
 #output = dict_values(['pey', '010-9999-1234', '1118'])
 # dict_values 객체를 리턴한다.
+
+
 
 #key, value 쌍 얻기 -items
 print(a.items())
@@ -78,3 +83,44 @@ print(a.items())
 # items함수는 key, value의 쌍을 튜플(tuple)로 묶은 값을 dict_items객체로 리턴
 
 
+
+#key로 value 얻기 -get
+#get(x)는 x라는 key에 대응하는 value를 리턴.
+# a.get('name') , a['name'] 은 동일한 결괏값이 나온다.
+# but!!!!
+# 만약 딕셔너리에 존재하지 않는 키로 값을 가져오려고 할 경우
+# a['nokey'] : 오류발생(o)
+# a.get('nokey') : 오류발생(x), None 리턴
+'''
+>>> a = {'name':'pey', 'phone':'010-9999-1234', 'birth': '1118'}
+>>> print(a.get('nokey'))
+None
+>>> print(a['nokey’])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'nokey'
+'''
+
+
+
+#딕셔너리 안에 찾으려는 Key가 없을 경우, 미리 정해 둔 디폴트 값을 대신 가져오게 하고 싶을 때는 get(x, '디폴트 값')을 사용하면 편리
+a.get('nokey', 'food')
+
+
+
+#해당 key가 딕셔너리 안에 있는지 조사하기 -in
+# return true/false
+'''
+>>> a = {'name':'pey', 'phone':'010-9999-1234', 'birth': '1118'}
+>>> 'name' in a
+True
+>>> 'email' in a
+False
+'''
+
+
+
+
+
+# key:value 쌍 모두 지우기 - clear
+a.clear()
