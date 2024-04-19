@@ -76,5 +76,23 @@ for i in range(2,10):        # 1번 for문
 
 
 #리스트 컴프리헨션 사용
+# 사용 x
+'''
+>>> a = [1,2,3,4]
+>>> result = []
+>>> for num in a:
+...     result.append(num*3)
+...
+>>> print(result)
+[3, 6, 9, 12]
+'''
+# 사용 o
 a = [1,2,3,4]
-result = []
+result = [num * 3 for num in a]
+print(result)
+
+
+a = [1,2,3,4]
+result = [num*3 for num in a if num%2 == 0]
+
+''' [표현식 for 항목 in 반복_가능_객체 if 조건문] '''
