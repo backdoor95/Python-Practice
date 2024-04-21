@@ -30,6 +30,7 @@ print(id(a))
 print(id(b))
 print(a is b)
 
+#방법 2 : copy 사용
 from copy import copy
 a = [1,2,3]
 b = copy(a)
