@@ -83,7 +83,7 @@ f.close()
 
 ######### with 문과 함께 사용하기 #############
 # open , close를 자동으로 해주는 역할. == with
-with open("textfile02.txt","w") as f:
+with open("textfile02.txt","a") as f:
     f.write("with 명령어 테스트")
 with open("textfile02.txt","r") as f:
     print(f.read())
