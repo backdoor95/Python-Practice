@@ -94,7 +94,7 @@ else:  # 오류가 없을 경우에만 수행
     ...
 
 '''
-
+ValueError
 # try_else.py
 try:
     age=int(input('나이를 입력하세요: '))
