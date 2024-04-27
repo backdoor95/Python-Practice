@@ -31,5 +31,5 @@ print(mod2.add(mod2.PI,4.4))
 
 
 #                  2. PYTHONPATH 환경 변수 사용하기
-set PYTHONPATH = C:\\Users\\JH\\Desktop\\python\\DoIt\\Python-Practice\\mymod
-
+# set PYTHONPATH = C:\\Users\\JH\\Desktop\\python\\DoIt\\Python-Practice\\mymod
+# 이 방법은 .py 에 작성하는게 아니라, 인터프리터에서 실행해야함.(윈도우 환경)
