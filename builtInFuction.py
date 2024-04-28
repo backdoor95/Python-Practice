@@ -9,3 +9,9 @@ print(list(zip("abc", "def" , "z")))
 print(list(zip("abc", "def" , "zz")))
 print(list(zip("abc", "def" , "zzz")))
 print(list(zip("abc", "def" , "zzzz")))
+'''
+[('a', 'd', 'z')]
+[('a', 'd', 'z'), ('b', 'e', 'z')]
+[('a', 'd', 'z'), ('b', 'e', 'z'), ('c', 'f', 'z')]
+[('a', 'd', 'z'), ('b', 'e', 'z'), ('c', 'f', 'z')]
+'''
